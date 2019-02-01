@@ -1,0 +1,88 @@
+html,body{ 
+	width:100%;
+	height:100%;
+    color: black;
+    background-color: hsl(60,100%,100%)
+}
+
+
+body{
+    font-family: "Times New Roman", Times, serif !important;
+    height: 100%;
+    width: 100%;
+}
+
+
+#canvas {
+    z-index: 50;
+	position: absolute;
+	left: .5%;
+    top: .01%;
+}
+
+#particles-js{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+
+#contentWrapper {
+    display: table;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: .01%;
+}
+
+#content {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#headshot {
+    border-radius: 10em;
+    width: 10em;
+    height: auto;
+    margin: 0 0 1em 0;
+    -webkit-animation: hueUndu 30s infinite linear;
+}
+
+#card {
+    margin: 0 auto; 
+    background: rgba(255, 255, 255, .95);
+    border-collapse: separate; 
+    border-radius: 3em;
+    border: 2px solid #f35626;
+    padding: 1em;
+    -webkit-animation: hue 30s infinite linear;
+}
+
+#underline {
+    border: 1px #f35626 solid;
+}
+
+
+
+@-webkit-keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+  }
+}
+
+@-webkit-keyframes hueUndu {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+
+  to {
+    -webkit-filter: hue-rotate(360deg);
+  }
+}
