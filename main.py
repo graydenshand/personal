@@ -1,8 +1,11 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request, redirect
 from flask_sslify import SSLify
+import os
 
 app = Flask(__name__)
-sslify = SSLify(app)
+
+if 'DYNO' in os.environ: # only trigger SSLify if the app is running on Heroku
+    sslify = SSLify(app)
 
 @app.route('/')
 def index():
