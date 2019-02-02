@@ -6,6 +6,9 @@ function contactClick() {
   });
 }
 
+var el = document.getElementById('contactClick');
+el.onclick = contactClick;
+
 particlesJS('particles-js', {
   "particles": {
     "number": {
