@@ -1,3 +1,11 @@
+function contactClick() {
+  ga('send', 'event', {
+    eventCategory: 'Contact',
+    eventAction: 'click',
+    eventLabel: "mailto:graydenshand@gmail.com"
+  });
+}
+
 particlesJS('particles-js', {
   "particles": {
     "number": {
