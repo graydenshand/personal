@@ -4,11 +4,19 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133694700-1"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-      gtag('config', 'UA-133694700-1');
+        gtag('config', 'UA-133694700-1');
+        var trackOutboundLink = function(url) {
+          gtag('event', 'click', {
+            'event_category': 'outbound',
+            'event_label': url,
+            'transport_type': 'beacon',
+            'event_callback': function(){document.location = url;}
+          });
+        }
     </script>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -31,8 +39,8 @@
                 <div class='text-center col-8 col-md-4' id="card">
                     <img src="/static/headshot.png" id="headshot">
                     <h3>GRAYDEN SHAND</h3>
-                    <hr id="underline" style="width: 10em; color: #dddddd">
-                    <a href="mailto:graydenshand@gmail.com" style="color: #f35626" id="contactClick"><span class="fas fa-envelope" style='font-size: 2em;'></span></a>
+                    <hr id="overline" style="width: 10em; color: #dddddd">
+                    <a href="mailto:graydenshand@gmail.com" style="color: #f35626" id="contactClick" onclick="trackOutboundLink('mailto:graydenshand@gmail.com'); return false"><span class="fas fa-envelope" style='font-size: 2em;'></span></a>
                     <hr id="underline" style="width: 10em; color: #dddddd">
                     <p class="lead"><i>let's build something new</i></p>
                 </div>
