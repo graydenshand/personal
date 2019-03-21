@@ -25,7 +25,6 @@ body{
     height: 100%;
     background-size: cover;
     background-position: 50% 50%;
-    background-repeat: no-repeat;
 }
 
 
@@ -68,7 +67,6 @@ body{
 #overline {
     border: 1px #f35626 solid;  
 }
-
 
 
 @-webkit-keyframes hue {
