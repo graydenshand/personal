@@ -17,7 +17,7 @@ def base():
 
 @app.route('/article')
 def article():
-	return render_template('article.html', title='"Technical Work" and Broadly Defined Jobs', sub_title="25 March, 2019")
+	return render_template('article.html', title='"Technical Work" and Broadly Defined Jobs', date="25 March, 2019")
 
 if __name__ == "__main__":
     app.run()
