@@ -13,7 +13,7 @@ function App() {
       				<p className="text-gray-800 text-sm tracking-6 leading-5 mb-2">Hey there &#128075;</p>
     					<p className="text-gray-800 text-sm tracking-6 leading-5 mb-2">I'm Grayden&mdash;I write software and live in Shelburne, VT. </p>
     					<p className="text-gray-800 text-sm tracking-6 leading-5 mb-2">Currently, I'm the technical lead for <a href="https://akimbo.com" target="_blank" className="text-indigo-800 font-bold hover:text-indigo-600">akimbo.com</a>, working with a small and talented team to build a new model for online learning.</p>
-    					<p className="text-gray-800 text-sm tracking-6 leading-5 mb-2">Also, check out this <a href="https://timedbrainstorm.com" target="_blank" className="text-indigo-800 font-bold hover:text-indigo-600" >free brainstorm app</a> I recently built, it's a simple tool for generating ideas collaboratively (and anonymously) with your team.</p>
+    					<p className="text-gray-800 text-sm tracking-6 leading-5 mb-2">Also, check out this <a href="http://timedbrainstorm.com" target="_blank" className="text-indigo-800 font-bold hover:text-indigo-600" >free brainstorm app</a> I recently built, it's a simple tool for generating ideas collaboratively (and anonymously) with your team.</p>
     				</div>
             <div>
               <p className="text-xs text-center md:text-left uppercase font-bold text-gray-400 mt-2 tracking-wide">&mdash; Contact &mdash;</p>
